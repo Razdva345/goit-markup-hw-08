@@ -17,7 +17,14 @@
 
 	padding: 40px;
 
-	width: 528px;
+	width: 290px;
+
+	@include mobile {
+		width: 450px;
+	}
+	@include desktop {
+		width: 528px;
+	}
 
 	background-color: var(--primary-white-color);
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -124,6 +131,12 @@
 	@include flexCentering;
 
 	line-height: 1.71;
+	font-size: 14px;
+
+	@media screen and (min-width: 320px) and (max-width: 1199px) {
+		font-size: 11px;
+		line-height: 1.27;
+	}
 }
 
 .checkbox__custom {

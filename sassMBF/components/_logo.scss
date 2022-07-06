@@ -1,5 +1,5 @@
 .logo {
-	@include flexCentering(flex, null, center);
+	@include flexCentering(inline-flex, null, center);
 	font-family: "Raleway", sans-serif;
 
 	@include font(700, 26px, 1.19, null);

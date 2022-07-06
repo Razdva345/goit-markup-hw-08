@@ -1,5 +1,4 @@
 .social {
-	margin-left: 70px;
 }
 .social__title,
 .subscription__title {
@@ -8,6 +7,9 @@
 	@include font(700, 14px, 1.14, null);
 
 	text-transform: uppercase;
+	@include desktop {
+		text-align: left;
+	}
 
 	color: var(--primary-white-color);
 }

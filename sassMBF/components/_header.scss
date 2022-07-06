@@ -3,9 +3,8 @@
 	background-color: var(--primary-bg-color);
 	border-radius: 2px;
 
-	&__container {
-		@include flexCentering;
-	}
+	padding: 15px 0;
+	display: flex;
 }
 
 .navigation {
@@ -16,6 +15,7 @@
 	@include flexCentering;
 
 	margin-left: 93px;
+	// display: none;
 }
 
 .current {
@@ -63,6 +63,7 @@
 .contacts {
 	@include flexCentering;
 	margin-left: auto;
+	display: none;
 }
 
 .contacts__item:not(:last-child) {
@@ -78,4 +79,9 @@
 
 .contacts__text {
 	margin-left: 10px;
+}
+.menu-btn {
+	border: none;
+	background-color: inherit;
+	margin-left: auto;
 }
