@@ -5,17 +5,34 @@
 
 	background-color: var(--hero-bg-color);
 
-	background-image: linear-gradient(
-			to right,
-			rgba(47, 48, 58, 0.4),
-			rgba(47, 48, 58, 0.4)
-		),
-		url(../images/hero.jpg);
+	background-image: var(--linear-gradient),
+		url(../../images/hero/hero-bg-mob.jpg);
 
 	@include background;
 
+	@include retina {
+		background-image: var(--linear-gradient),
+			url(../../images/hero/hero-bg-mob2x.jpg);
+	}
+
+	@include tablet {
+		background-image: var(--linear-gradient),
+			url(../../images/hero/hero-bg-tab.jpg);
+
+		@include retina {
+			background-image: var(--linear-gradient),
+				url(../../images/hero/hero-bg-tab2x.jpg);
+		}
+	}
+
 	@include desktop {
 		padding: 200px 0;
+		background-image: var(--linear-gradient), url(../../images/hero/hero.jpg);
+
+		@include retina {
+			background-image: var(--linear-gradient),
+				url(../../images/hero/hero2x.jpg);
+		}
 	}
 }
 

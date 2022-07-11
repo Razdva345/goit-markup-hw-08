@@ -2,11 +2,14 @@
 	@media screen and (min-width: 320px) and (max-width: 767px) {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 8px;
+		column-gap: 8px;
+		row-gap: 15px;
 	}
 
 	@include tablet {
 		@include flexCentering;
+
+		gap: 8px;
 	}
 
 	margin-bottom: 50px;
@@ -47,6 +50,7 @@
 
 .portfolio-list__item {
 	width: 100%;
+
 	@include tablet {
 		flex-basis: calc((100% - 30px) / 2);
 	}

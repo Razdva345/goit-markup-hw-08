@@ -32,6 +32,10 @@
 	border-radius: 4px;
 
 	@include transition(transform);
+
+	.backdrop.is-hidden & {
+		transform: translate(-50%, -50%) scale(2);
+	}
 }
 .form {
 	display: flex;
@@ -180,10 +184,6 @@
 	&:focus {
 		outline: 3px solid #00000046;
 	}
-}
-
-.backdrop.is-hidden .modal {
-	transform: translate(-50%, -50%) scale(2);
 }
 
 .modal__close-btn {

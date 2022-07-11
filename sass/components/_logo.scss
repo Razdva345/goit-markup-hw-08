@@ -2,7 +2,7 @@
 	@include flexCentering(inline-flex, null, center);
 	font-family: "Raleway", sans-serif;
 
-	@include font(700, 26px, 1.19, null);
+	@include font(700, 24px, 1.16, null);
 	outline: 2px solid transparent;
 	@include transition(outline);
 
@@ -13,10 +13,17 @@
 	&__text {
 		color: var(--accent-color);
 	}
+	@include desktop {
+		font-size: 26px;
+		line-height: 1.19;
+	}
 }
 
 .navigation__logo {
 	color: var(--title-text-color);
+	@media screen and (max-width: 767px) {
+		padding: 16px 0;
+	}
 }
 
 .footer__logo {
