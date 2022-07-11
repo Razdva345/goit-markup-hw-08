@@ -145,6 +145,7 @@ body {
   transition-property: opacity, visibility;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
 }
 
 .modal {
@@ -169,6 +170,12 @@ body {
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 767px) {
+  .modal {
+    height: 80vh;
+    overflow-y: scroll;
   }
 }
 .backdrop.is-hidden .modal {
@@ -776,6 +783,7 @@ body {
   transition-property: transform, opacity, visibility;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
 }
 .mob-menu__container {
   padding: 0 48px;

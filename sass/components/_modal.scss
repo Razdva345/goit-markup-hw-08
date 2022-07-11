@@ -8,6 +8,8 @@
 	background-color: rgba(0, 0, 0, 0.2);
 
 	@include transition(opacity, visibility);
+
+	overflow-y: scroll;
 }
 .modal {
 	position: absolute;
@@ -24,6 +26,11 @@
 	}
 	@include desktop {
 		width: 528px;
+	}
+
+	@media screen and (min-width: 700px) and (max-width: 767px) {
+		height: 80vh;
+		overflow-y: scroll;
 	}
 
 	background-color: var(--primary-white-color);
