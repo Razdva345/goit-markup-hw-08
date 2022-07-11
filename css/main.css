@@ -884,35 +884,35 @@ body {
   padding: 118px 0;
   text-align: center;
   background-color: var(--hero-bg-color);
-  background-image: var(--linear-gradient), url(../../images/hero/hero-bg-mob.jpg);
+  background-image: var(--linear-gradient), url(../images/hero/hero-bg-mob.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--linear-gradient), url(../../images/hero/hero-bg-mob2x.jpg);
+    background-image: var(--linear-gradient), url(../images/hero/hero-bg-mob2x.jpg);
   }
 }
 @media screen and (min-width: 700px) {
   .hero {
-    background-image: var(--linear-gradient), url(../../images/hero/hero-bg-tab.jpg);
+    background-image: var(--linear-gradient), url(../images/hero/hero-bg-tab.jpg);
   }
 }
 @media screen and (min-width: 700px) and (min-device-pixel-ratio: 2), screen and (min-width: 700px) and (min-resolution: 192dpi), screen and (min-width: 700px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--linear-gradient), url(../../images/hero/hero-bg-tab2x.jpg);
+    background-image: var(--linear-gradient), url(../images/hero/hero-bg-tab2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     padding: 200px 0;
-    background-image: var(--linear-gradient), url(../../images/hero/hero.jpg);
+    background-image: var(--linear-gradient), url(../images/hero/hero.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--linear-gradient), url(../../images/hero/hero2x.jpg);
+    background-image: var(--linear-gradient), url(../images/hero/hero2x.jpg);
   }
 }
 
@@ -980,16 +980,16 @@ body {
   background-position: center;
 }
 .features__item--attention::before {
-  background-image: url(../../images/icons/antenna.svg);
+  background-image: url(../images/icons/antenna.svg);
 }
 .features__item--punctuality::before {
-  background-image: url(../../images/icons/clock.svg);
+  background-image: url(../images/icons/clock.svg);
 }
 .features__item--planning::before {
-  background-image: url(../../images/icons/diagram.svg);
+  background-image: url(../images/icons/diagram.svg);
 }
 .features__item--technology::before {
-  background-image: url(../../images/icons/astronaut.svg);
+  background-image: url(../images/icons/astronaut.svg);
 }
 
 .features__title {
