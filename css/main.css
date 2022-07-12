@@ -1122,13 +1122,8 @@ body {
 }
 
 .clients-list__item {
-  width: 100%;
+  flex-basis: calc((100% - 30px) / 2);
   height: 92px;
-}
-@media screen and (min-width: 480px) {
-  .clients-list__item {
-    flex-basis: calc((100% - 30px) / 2);
-  }
 }
 @media screen and (min-width: 700px) {
   .clients-list__item {

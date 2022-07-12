@@ -10,10 +10,8 @@
 }
 
 .clients-list__item {
-	width: 100%;
-	@include mobile {
-		flex-basis: calc((100% - 30px) / 2);
-	}
+	flex-basis: calc((100% - 30px) / 2);
+
 	@include tablet {
 		flex-basis: calc((100% - 60px) / 3);
 	}
