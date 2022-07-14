@@ -788,7 +788,7 @@ body {
   padding: 48px 0;
   background-color: inherit;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   z-index: 2;
   transition-property: transform, opacity, visibility;
   transition-duration: 250ms;
