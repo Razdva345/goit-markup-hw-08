@@ -145,7 +145,6 @@ body {
   transition-property: opacity, visibility;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  overflow-y: scroll;
 }
 
 .modal {
@@ -153,7 +152,6 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  overflow-y: scroll;
   padding: 40px;
   width: 290px;
   background-color: var(--primary-white-color);
@@ -162,6 +160,11 @@ body {
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    overflow-y: scroll;
+  }
 }
 @media screen and (min-width: 480px) {
   .modal {
