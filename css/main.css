@@ -823,6 +823,10 @@ body {
   color: var(--accent-color);
 }
 
+.mob-menu__list {
+  margin-bottom: 10px;
+}
+
 .mob-menu__item:not(:last-child) {
   margin-bottom: 32px;
 }
