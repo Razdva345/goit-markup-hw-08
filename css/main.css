@@ -153,6 +153,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
+  overflow-y: scroll;
   padding: 40px;
   width: 290px;
   background-color: var(--primary-white-color);
@@ -175,7 +176,6 @@ body {
 @media screen and (min-width: 700px) and (max-width: 767px) {
   .modal {
     height: 80vh;
-    overflow-y: scroll;
   }
 }
 .backdrop.is-hidden .modal {
@@ -363,11 +363,18 @@ body {
 }
 
 .title {
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--title-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
 }
 
 .logo {
@@ -444,17 +451,6 @@ body {
   }
 }
 
-.current::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  height: 4px;
-  width: 100%;
-  border-radius: 2px;
-  background-color: var(--accent-color);
-}
-
 .menu__item {
   position: relative;
 }
@@ -480,6 +476,20 @@ body {
 .contacts__link:focus {
   color: var(--accent-color);
   outline: none;
+}
+
+.current {
+  color: var(--accent-color);
+}
+.current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  background-color: var(--accent-color);
 }
 
 .contacts {
@@ -897,6 +907,7 @@ body {
 
 .hero {
   padding: 118px 0;
+  max-width: 1600px;
   text-align: center;
   background-color: var(--hero-bg-color);
   background-image: var(--linear-gradient), url(../images/hero/hero-bg-mob.jpg);
@@ -1156,7 +1167,7 @@ body {
 }
 
 .filter {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .filter {
@@ -1171,7 +1182,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 40px;
     gap: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
   }
 }
 

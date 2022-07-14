@@ -25,22 +25,6 @@
 	}
 }
 
-.current {
-	&::after {
-		content: "";
-
-		position: absolute;
-		left: 0;
-		bottom: -1px;
-
-		height: 4px;
-		width: 100%;
-
-		border-radius: 2px;
-		background-color: var(--accent-color);
-	}
-}
-
 .menu__item {
 	position: relative;
 
@@ -64,6 +48,24 @@
 	&:focus {
 		color: var(--accent-color);
 		outline: none;
+	}
+}
+
+.current {
+	color: var(--accent-color);
+
+	&::after {
+		content: "";
+
+		position: absolute;
+		left: 0;
+		bottom: -1px;
+
+		height: 4px;
+		width: 100%;
+
+		border-radius: 2px;
+		background-color: var(--accent-color);
 	}
 }
 
